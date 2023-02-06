@@ -1,0 +1,473 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::before, ::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.first-screen {
+  background-image: 
+  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),
+  url(img/sleeping.webp);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.logo > img{
+  width: 30px;
+  padding: 10px;
+}
+
+.logo-name {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.first-info {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80vh;
+}
+
+.first-info > h2 {
+  font-weight: 500;
+  width: 80%;
+}
+
+.first-info > p {
+  width: 80%;
+}
+
+.button-green > a {
+  width: 40vw;
+  display: block;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border-radius: 20px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 12vh;
+}
+
+.button > a {
+  width: 40vw;
+  display: block;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.down > p{
+  color: white;
+  font-size: 30px;
+}
+
+
+/* ESTILOS DE SECOND SCREEN */
+
+.second-screen {
+  background-image: url(img/paven.png);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.second-screen h2, 
+.third-screen h2,
+.fourth-screen h2,
+.fifth-screen h2 {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.second-screen > p,
+.third-screen > p,
+.fourth-screen > p,
+.fifth-screen > p {
+  text-align: center;
+  font-size: 1rem;
+  width: 80%;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  width: 80%;
+  background-color: aliceblue;
+  border: 1px solid black;
+  height: 400px;
+}
+
+.second-section-button > a{
+  text-align: center;
+  display: block;
+  width: 40vw;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.lapiceros {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+.lapicero {
+  position: absolute;
+  bottom: -105px;
+  left: -130px;
+}
+
+.lapicero > img {
+  width: 250px;
+}
+
+/* ESTILOS DE LA THIRD SCREEN */
+
+.third-screen {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.third-screen h2 {
+  margin-top: 0px;
+}
+
+/* ESTILOS DE LAS COURSE CARD */
+
+.courses {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  overflow-x: auto;
+  align-self: start;
+}
+
+
+.course-card {
+  width: 400px;
+  height: auto;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.course-card > img {
+  width: 100%;
+  height: 150px;
+}
+
+.info-card {
+  padding: 10px;
+}
+
+.info-card > h3 {
+  margin-left: 10px;
+}
+
+.info-card > p {
+  margin-left: 10px;
+  color: gray;
+  font-size: 15px;
+}
+
+.students {
+  height: 30px;
+  border-top: 1px solid gray;
+  background-color: azure;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cost {
+  color: green;
+}
+
+.third-section-button > a{
+  text-align: center;
+  display: block;
+  width: 40vw;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* ESTILOS DE LA FOURTH SECTION */
+
+.fourth-screen {
+  height: 100vh;
+  background-image: url(img/paven.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fourth-menu {
+  width: 100%;
+}
+
+.fourth-menu > ul > li {
+  list-style: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+  padding: 20px;
+}
+
+.fourth-menu > ul > li  > a {
+  color: black;
+  font-weight: 600;
+}
+
+.fourth-action-call {
+align-self: self-start;
+display: flex;
+flex-direction: column;
+padding-left: 20px;
+justify-content: space-evenly;
+height: 20vh;
+}
+
+.fourth-action-call > p {
+  text-align: start;
+}
+
+.fourth-action-call > h2 {
+  text-align: start;
+}
+
+.fourth-section-button > a {
+  text-align: center;
+  display: block;
+  width: 40vw;
+  color: white;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.second-lapiceros {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+.second-lapicero {
+  position: absolute;
+  bottom: -105px;
+  right: -110px;
+}
+
+.second-lapicero > img {
+  width: 250px;
+}
+
+/* ESTILOS DE FIFTH SCREEN */
+
+.fifth-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brands > img {
+  width: 30%;
+  height: 50px;
+  padding: 20px;
+}
+
+.history-card {
+  width: 80%;
+  border: 1px solid gainsboro;
+}
+
+.history-card-image {
+  height: 200px;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url(img/smiling.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.history-card > p {
+  margin-top: 15px;
+  padding: 15px;
+  text-align: justify;
+}
+
+.info-history-card > p {
+  margin-left: 5%;
+}
+
+.info-history-card > p > span{
+  color: gray;
+  font-size: smaller;
+}
+.info-history-card {
+  display: flex;
+  padding: 15px;
+}
+
+.img{
+  width: 35px;
+  height: 35px;
+  background-image: url(img/smiling.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.fifth-section-button > a {
+  text-align: center;
+  display: block;
+  width: 40vw;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+/* ESTILOS DE LA SIXTH SCREEN */
+
+.sixth-screen {
+  height: 100vh;
+  background-color: #213346;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.quick-links {
+  width: 100%;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.1);
+  width: 90%;
+}
+
+.quick-links > h3{
+  color: white;
+}
+
+.quick-links > ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+}
+
+.quick-links > ul > li {
+  list-style: none;
+  padding: 10px;
+  width: 40%;
+}
+
+.quick-links > ul > li > a {
+  color: white;
+}
+
+.support {
+  width: 90%;
+  height: 20vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  color: white;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.1);
+}
+
+
+.sixth-section-button > a{
+  text-align: center;
+  display: block;
+  width: 40vw;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3499db;
+}
+
+
+.about {
+  width: 90%;
+  padding: 10px;
+  text-align: justify;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.1);
+}
+
+.about > p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
